@@ -6,7 +6,7 @@ In this tutorial, I will be discussing the regex for an e-mail. I will be going 
 
 ## Summary
 
-```/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/```  is the string of text that makes up the regix of an email. 
+```/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/```  is the string of text that makes up the regex of an email. 
 
 The components that make up this regex that will be discussed is the following: anchors, quantifiers, OR operators, character classes, flags, grouping and capturing, bracket expression, greedy and lazy match, boundaries, back-references, look-ahead and look-behind.
 
@@ -36,11 +36,13 @@ Bracket Expressions: ``` [] ``` <br />
 ### Anchors
 ``` ^ ``` - Matches beginning of line || Example: ^abc || Matches: abc, abcd, abc123 <br />
 ``` $ ``` - Matches end of line || Example: abc$ || Matches: 123:abc, 234abc, hiabc <br />
-``` ^ $ ``` - Exact string match || Example: ^abc$ || Matches: ^abc$ <br />
+``` ^ $ ``` - Exact string match || Example: ^abc$ || Matches: abc <br />
 
-In the case of the email regex; the ```^ ``` indicates the beginning of the string while ```$``` indicates the end of the string
+In the case of the email regex; the ```^``` indicates the beginning of the string while ```$``` indicates the end of the string
 
 ### Quantifiers
+``` + ``` - Matches character before + one or more times || Example: a+c || Matches: ac, aac, aaac <br />
+
 
 ### OR Operator
 
